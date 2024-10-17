@@ -1,0 +1,12 @@
+<div class="container my-3">
+  <div class="d-flex align-items-center justify-content-between">
+    <button type="button" class="btn flex-grow-0" (click)="activeOffcanvas.close()">
+      <i class="fa-solid fa-arrow-left fs-3"></i>
+      <span class="visually-hidden">no message</span>
+    </button>
+    <form class="flex-grow-1">
+      <input type="text" placeholder="Поиск" class="w-100 mobile-search-input py-2 px-3" />
+    </form>
+  </div>
+  <app-filter-bar></app-filter-bar>
+</div>

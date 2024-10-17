@@ -1,0 +1,6 @@
+<section clickOutside (clickedOutside)="closeForm()" class="relative">
+  <form class="search-form relative w-100"  (submit)="onSubmit($event)">
+    <input type="text" class="search-box" name="search" [formControl]="search" placeholder="Поисковый запрос" />
+  </form>
+  <app-filter-bar class="absolute filter-bar"></app-filter-bar>
+</section>

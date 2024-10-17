@@ -1,0 +1,76 @@
+<div class="d-flex flex-wrap flex-md-nowrap justify-content-between py-2 rounded ">
+  <section class="border-1 border-end d-none d-md-flex">
+    <div class="p-3">
+      <h3 class="text-title">История</h3>
+      <!-- should be dynamic -->
+      <ul class="history-list list-unstyled">
+        <li class="history-item">закрепить теги</li>
+        <li class="history-item">кнопка</li>
+        <li class="history-item">приложение</li>
+        <li class="history-item">форма</li>
+        <li class="history-item">текстовое поле</li>
+        <li class="history-item">выпадающий список</li>
+      </ul>
+    </div>
+  </section>
+  <section class="p-3 flex-grow-1">
+    <div class="author">
+      <label class="author-label" for="author">Автор</label>
+      <div class="author-field">
+        <input
+          id="author"
+          type="text"
+          class="author-input"
+          placeholder="Имя или должность"
+        />
+        <button type="button" class="me" (click)="me()">Я</button>
+      </div>
+    </div>
+    <div class="d-flex flex-column flex-sm-row flex-sm-wrap py-3">
+      <div class="px-2">
+        <input
+          type="checkbox"
+          id="participant"
+          name="participant"
+          value="participant"
+        />
+        <label for="participant" class="person-type-label">Я участник</label>
+      </div>
+      <div class="px-2">
+        <input type="checkbox" id="strict" name="strict" value="strict" />
+        <label for="strict" class="person-type-label">Строгий поиск</label>
+      </div>
+      <div class="px-2">
+        <input type="checkbox" id="headline" name="headline" value="headline" />
+        <label for="headline" class="person-type-label">В заголовках</label>
+      </div>
+    </div>
+    <div >
+      <h5 class="text-only">Только</h5>
+      <div class="d-flex flex-column flex-sm-row flex-sm-wrap">
+        <div class="px-2">
+          <input type="checkbox" id="tags" name="tags" value="tags" />
+          <label for="tags" class="person-type-label">Теги</label>
+        </div>
+        <div class="px-2">
+          <input
+            type="checkbox"
+            id="requests"
+            name="requests"
+            value="requests"
+          />
+          <label for="requests" class="person-type-label">Просьбы</label>
+        </div>
+        <div class="px-2">
+          <input
+            type="checkbox"
+            id="contacts"
+            name="contacts"
+            value="contacts"
+          />
+          <label for="contacts" class="person-type-label">Контакты</label>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

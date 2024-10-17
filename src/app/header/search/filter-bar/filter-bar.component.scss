@@ -1,0 +1,163 @@
+@import "../../../../variables.scss";
+
+// .filter-bar {
+//   display: flex;
+//   justify-content: space-between;
+//   max-height: auto;
+//   background-color: $white;
+//   margin-top: 3px;
+//   -webkit-box-shadow: -1px 6px 22px -7px rgba(0,0,0,0.42);
+//   -moz-box-shadow: -1px 6px 22px -7px rgba(0,0,0,0.42);
+//   box-shadow: -1px 6px 22px -7px rgba(0,0,0,1);
+
+//   @media screen and (max-width: 680px){
+//      flex-wrap: wrap;
+//      flex-direction: column-reverse;
+//   }
+
+//   .history {
+//     flex-grow: 0.2;
+//     border-right: 1px solid $light-gray;
+
+//     .history-list {
+//       overflow-y: auto;
+//       overflow-x: hidden;
+//       height: 180px;
+//       padding-top: 10px;
+//       cursor: pointer;
+
+//       li {
+//         font-size: 14px;
+//         line-height: 30px;
+//         letter-spacing: 0.0025em;
+//         color: #2a3033;
+//       }
+//     }
+
+//     /* Style the scrollbar */
+//     ::-webkit-scrollbar {
+//       width: 5px; /* Width of the scrollbar */
+//     }
+
+//     ::-webkit-scrollbar-track {
+//       background: #f1f1f1; /* Background of the scrollbar track */
+//     }
+
+//     ::-webkit-scrollbar-thumb {
+//       background: $light-gray; /* Color of the scrollbar thumb */
+//       border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+//     }
+
+//     ::-webkit-scrollbar-thumb:hover {
+//       background: $light-gray; /* Color when hovering over the scrollbar thumb */
+//     }
+//   }
+
+//   .filter {
+//     flex-grow: 0.9;
+
+//       }
+//     }
+
+//     .person-types {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       padding: 10px;
+//       flex-wrap: wrap;
+
+//     }
+
+//     .only {
+//       display: flex;
+//       align-items: center;
+//       justify-content: start;
+//       padding: 10px 0px;
+//       flex-wrap: wrap;
+
+//       .person-type-label {
+//         padding: 4px;
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
+.text-title {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.001em;
+  color: $light-gray;
+}
+
+.text-only {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0025em;
+
+  color: $dark;
+}
+
+.author {
+  border-radius: 4px;
+  border: 1px solid;
+  border-color: $light-gray;
+  position: relative;
+
+  .author-label {
+    position: absolute;
+    top: -8px;
+    background-color: #fff;
+    color: $light-gray;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  .author-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .author-input {
+      width: 100%;
+      height: 46px;
+      border: none;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+
+      &::placeholder {
+        color: $light-gray;
+      }
+    }
+
+    .me {
+      height: 24px;
+      width: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $light-gray;
+      border: none;
+      color: #fff;
+      border-radius: 4px;
+    }
+  }
+}
+.person-type-label {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.history-item {
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+letter-spacing: 0.0025em;
+
+color: #2A3033;
+
+}

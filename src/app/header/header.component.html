@@ -1,0 +1,159 @@
+<header class="d-flex align-items-center justify-content-between">
+  <div
+    class="d-flex align-items-center justify-content-between flex-grow-1 flex-md-grow-0"
+  >
+    <div class="d-flex align-items-center justify-content-between">
+      <button
+        type="button"
+        class="btn d-flex align-items-center justify-content-center d-md-none"
+      >
+        <img
+          src="/assets/page-icons/mobile/bar.svg"
+          alt="links"
+          class="page-icon-size"
+        />
+      </button>
+      <img
+        src="/assets/company-name.svg"
+        class="company-name"
+        alt="Tile Expert"
+      />
+    </div>
+    <div class="d-none d-sm-flex align-items-center ms-3 flex-grow-1 flex-md-grow-0">
+      <ul class="nav position-relative pages-box d-flex flex-grow-1 flex-md-grow-0">
+        <li>
+          <a
+            href="#"
+            class="nav-link px-1 px-xl-2 text-white d-none d-md-flex align-items-center"
+          >
+            <img
+              src="/assets/page-icons/links.svg"
+              alt="links"
+              class="page-icon-size d-none d-lg-inline"
+            />Ссылки</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-1 px-xl-2 text-white d-none d-md-flex align-items-center"
+          >
+            <img
+              src="/assets/page-icons/contacts.svg"
+              alt="links"
+              class="page-icon-size d-none d-lg-inline"
+            />Контакты</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-1 px-xl-2 text-white d-none d-md-flex align-items-center"
+          >
+            <img
+              src="/assets/page-icons/tags.svg"
+              alt="links "
+              class="page-icon-size d-none d-lg-inline"
+            />Теги</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-1 px-xl-2 text-white d-none d-md-flex align-items-center"
+          >
+            <img
+              src="/assets/page-icons/featured.svg"
+              alt="links"
+              class="page-icon-size d-none d-lg-inline"
+            />Избранное</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="nav-link px-1 px-xl-2 text-white d-none d-md-flex align-items-center"
+          >
+            <img
+              src="/assets/page-icons/visits.svg"
+              alt="links"
+              class="page-icon-size d-none d-lg-inline"
+            />Посещения</a
+          >
+        </li>
+        <li
+          class="actions list-style-none ms-3 flex-fill d-flex align-items-center justify-content-end"
+        >
+          <button type="button" class="search-btn" (click)="open()">
+              <i class="fa-solid fa-magnifying-glass text-white fs-4"></i>
+              <span class="visually-hidden">unread messages</span>
+
+          </button>
+        </li>
+        @if (isSearchBarOpen) {
+        <app-search
+          class="position-absolute tablet-search-box"
+          (onFormClose)="onSearchBarClose()"
+        ></app-search>
+        }
+      </ul>
+      <ul class="nav">
+        <li class="actions list-style-none">
+          <button type="button" class="search-btn" (click)="add()">
+              <i class="fa-solid fa-circle-plus text-white fs-4"></i>
+              <span class="visually-hidden">unread messages</span>
+
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <ul class="nav d-flex align-items-center justify-content-between">
+    <li class="actions list-style-none px-1 d-flex d-sm-none mobile-d-none">
+      <button type="button" class="search-btn" (click)="add()">
+              <i class="fa-solid fa-circle-plus text-white fs-4"></i>
+              <span class="visually-hidden">unread messages</span>
+      </button>
+    </li>
+    <li class="actions list-style-none px-1 d-flex d-sm-none mobile-d-none">
+      <button type="button" class="search-btn">
+          <i class="fa-solid fa-clock-rotate-left text-white fs-4"></i>
+          <span class="visually-hidden">unread messages</span>
+      </button>
+    </li>
+    <li class="actions list-style-none px-1 d-flex d-sm-none">
+      <button type="button" class="search-btn" (click)="openMobileHeader()">
+        <i class="fa-solid fa-magnifying-glass text-white fs-4"></i>
+        <span class="visually-hidden">unread messages</span>
+      </button>
+    </li>
+    <li>
+      <a
+        href="#"
+        class="nav-link px-1 px-xl-2 text-white d-flex align-items-center position-relative"
+      >
+        <i class="fa-regular fa-bell fs-4"></i>
+        <span
+          class="d-none d-sm-flex position-absolute badge rounded-pill bg-danger notification-badge"
+        >
+          37
+          <span class="visually-hidden">unread messages</span>
+        </span></a
+      >
+    </li>
+
+    <li class="d-none d-sm-flex">
+      <a
+        href="#"
+        class="nav-link px-0 px-xl-2 text-white d-flex align-items-center"
+      >
+        <img
+          src="/assets/page-icons/profile.svg"
+          alt="links"
+          width="40"
+          height="40"
+      /></a>
+    </li>
+  </ul>
+</header>
